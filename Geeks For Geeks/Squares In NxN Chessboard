@@ -1,0 +1,25 @@
+# Name: David Turnbough
+# Date: Monday July 27, 2020
+# Geeks For Geeks: Squares in N * N Chessboard
+# https://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0
+
+def main():
+    
+    testCases = int(input())
+
+    while(testCases > 0):
+
+        size = int(input())
+
+        total = int(0)
+
+        for i in range(1, size + 1):
+            total = total + (i * i)
+
+        print(total)
+
+        testCases = testCases - 1
+
+
+if __name__ == '__main__':
+    main()
